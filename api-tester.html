@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechHub - API Tester">
+    <meta name="author" content="TechHub">
+    <title>API Tester - TechHub</title>
+    <title>API Tester - TechHub</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- TechHub Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+</head>
+
+<body id="home">
+
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="logo">
+                            <span class="logo-icon">⚡</span>
+                            TechHub
+                        </span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll"><a href="index.html">Home</a></li>
+                        <li class="scroll active"><a href="api-tester.html">API Tester</a></li>
+                        <li class="scroll"><a href="ecommerce.html">E-Commerce</a></li>
+                        <li class="scroll"><a href="school-system.html">School System</a></li>
+                        <li class="scroll"><a href="index.html#geo">Geo Tools</a></li>
+                        <li class="scroll"><a href="eth-tracker.html">ETH Tracker</a></li>
+                        <li class="scroll"><a href="#contact-us">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <!-- API TESTER SECTION -->
+    <section id="api-tester" style="padding: 120px 0; min-height: 100vh;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown"><span class="gradient-text">API Tester</span></h2>
+                <p class="wow fadeInDown">Test any REST API endpoint with our powerful, intuitive testing tool. <br>
+                    Support for all HTTP methods with beautiful response formatting.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="api-container">
+                        <!-- HTTP Method Selector -->
+                        <div class="method-selector">
+                            <button class="method-btn active" data-method="GET">GET</button>
+                            <button class="method-btn" data-method="POST">POST</button>
+                            <button class="method-btn" data-method="PUT">PUT</button>
+                            <button class="method-btn" data-method="DELETE">DELETE</button>
+                            <button class="method-btn" data-method="PATCH">PATCH</button>
+                        </div>
+
+                        <!-- URL Input -->
+                        <div class="url-input-group">
+                            <input type="text" class="url-input" placeholder="https://api.example.com/users"
+                                value="https://api.example.com/users" />
+                            <button class="btn btn-primary send-btn">
+                                <span>Send</span>
+                            </button>
+                        </div>
+
+                        <!-- Response Section -->
+                        <div class="response-section">
+                            <h3>Response</h3>
+                            <div class="response-box">
+                                <p class="response-placeholder">Send a request to see the response</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2026 TechHub. All rights reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
+</body>
+
+</html>

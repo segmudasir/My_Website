@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechHub - All-in-One Developer Platform">
+  <meta name="author" content="TechHub">
+  <title>TechHub - Developer Toolkit</title>
+  <!-- core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- TechHub Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+</head>
+
+<body id="home">
+
+  <header id="header">
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <span class="logo">
+              <span class="logo-icon">⚡</span>
+              TechHub
+            </span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="api-tester.html">API Tester</a></li>
+            <li class="scroll"><a href="ecommerce.html">E-Commerce</a></li>
+            <li class="scroll"><a href="school-system.html">School System</a></li>
+            <li class="scroll"><a href="#geo">Geo Tools</a></li>
+            <li class="scroll"><a href="eth-tracker.html">ETH Tracker</a></li>
+            <li class="scroll"><a href="#contact-us">Contact</a></li>
+          </ul>
+        </div>
+      </div><!--/.container-->
+    </nav><!--/nav-->
+  </header><!--/header-->
+
+  <!-- HERO BANNER -->
+  <section id="hero-banner">
+    <div class="banner-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <span class="badge">All-in-One Developer Platform</span>
+            <h2 style="font-size: 48px; font-weight: 700;">Build, Test & Deploy <br> <span
+                class="gradient-text">Everything You Need</span></h2>
+            <p>A comprehensive suite of developer tools including API testing, e-commerce solutions, school management,
+              geo tools, and real-time crypto tracking.</p>
+            <a class="btn btn-primary btn-lg" href="#api-tester">Explore Tools →</a>
+            <a class="btn outline btn-lg" href="#" style="margin-left: 10px;">Documentation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#main-slider-->
+
+  <!-- GEO TOOLS SECTION (DOWNLOAD STYLE) -->
+  <section id="geo" class="download-now">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title wow fadeInDown" style="color: #fff;"><span style="color: #fff;">Geo Tools</span> Suite
+        </h2>
+        <p class="wow fadeInDown" style="color: rgba(255,255,255,0.9);">Professional geospatial tools for mapping,
+          navigation, and location-based services.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p>Built for developers who need precision. Our Geo Tools provide exact coordinate resolution, distance
+            calculations, and bearing measurements to power your location-aware applications.</p>
+          <a class="download-btn" href="downloads/GeoTools_Bundle.zip" style="margin-top: 30px;">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API TESTER SECTION -->
+  <section id="api-tester" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title wow fadeInDown"><span class="gradient-text">API Tester</span></h2>
+        <p class="wow fadeInDown">Test any REST API endpoint with our powerful, intuitive testing tool. <br> Support for
+          all HTTP methods with beautiful response formatting.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="api-container">
+            <!-- HTTP Method Selector -->
+            <div class="method-selector">
+              <button class="method-btn active" data-method="GET">GET</button>
+              <button class="method-btn" data-method="POST">POST</button>
+              <button class="method-btn" data-method="PUT">PUT</button>
+              <button class="method-btn" data-method="DELETE">DELETE</button>
+              <button class="method-btn" data-method="PATCH">PATCH</button>
+            </div>
+
+            <!-- URL Input -->
+            <div class="url-input-group">
+              <input type="text" class="url-input" placeholder="https://api.example.com/users"
+                value="https://api.example.com/users" />
+              <button class="btn btn-primary send-btn">
+                <span>Send</span>
+              </button>
+            </div>
+
+            <!-- Response Section -->
+            <div class="response-section">
+              <h3>Response</h3>
+              <div class="response-box">
+                <p class="response-placeholder">Send a request to see the response</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center" style="margin-top: 30px;">
+            <a href="api-tester.html" class="btn btn-primary">Open Full API Tester</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOMMERCE SECTION -->
+  <section id="ecommerce" style="background: #060911; padding: 100px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title wow fadeInDown"><span class="gradient-text">E-Commerce</span> Platform</h2>
+        <p class="wow fadeInDown">Build stunning online stores with our powerful e-commerce components. Product
+          listings, shopping carts, checkout flows, and more.</p>
+        <div class="pill-group wow fadeInDown">
+          <span class="pill blue">Product Management</span>
+          <span class="pill blue">Secure Payments</span>
+          <span class="pill blue">Inventory Tracking</span>
+          <span class="pill blue">Analytics Dashboard</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-badge best-seller">Best Seller</div>
+            <div class="product-icon">🎧</div>
+            <h3>Wireless Pro Headphones</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.8 (124 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$299.99</span>
+              <div class="product-actions">
+                <button class="icon-btn"><i class="fa fa-heart-o"></i></button>
+                <button class="icon-btn"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-badge new">New</div>
+            <div class="product-icon">⌚</div>
+            <h3>Smart Watch Ultra</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.9 (89 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$449.99</span>
+              <div class="product-actions">
+                <button class="icon-btn"><i class="fa fa-heart-o"></i></button>
+                <button class="icon-btn"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-badge popular">Popular</div>
+            <div class="product-icon">⌨️</div>
+            <h3>Mechanical Keyboard</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.7 (255 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$189.99</span>
+              <div class="product-actions">
+                <button class="icon-btn"><i class="fa fa-heart-o"></i></button>
+                <button class="icon-btn"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-badge sale">Sale</div>
+            <div class="product-icon">📷</div>
+            <h3>4K Action Camera</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.6 (178 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$379.99</span>
+              <div class="product-actions">
+                <button class="icon-btn"><i class="fa fa-heart-o"></i></button>
+                <button class="icon-btn"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 50px;">
+        <a href="ecommerce.html" class="btn btn-explore">Explore E-Commerce →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETH TRACKER SECTION -->
+  <section id="eth-tracker"
+    style="padding: 100px 0; background: #f9f9f9; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title wow fadeInDown"><span class="gradient-text">ETH Tracker</span></h2>
+        <p class="wow fadeInDown">Real-time Ethereum price tracking with live updates, historical data, and market
+          analytics.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="price-card">
+            <div class="eth-icon">◈</div>
+            <h2>$2,445.9</h2>
+            <span class="price-change positive">↗ +3.74%</span>
+            <div style="margin-top: 20px;">
+              <a href="eth-tracker.html" class="btn btn-primary">Open Live Tracker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-us" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title wow fadeInDown">Contact Us</h2>
+        <p class="wow fadeInDown">Have questions or need support? Reach out to our team.</p>
+      </div>
+    </div>
+  </section><!--/#contact-us-->
+
+
+  <section id="contact">
+
+    <div class="container">
+      <div class="container contact-info">
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <div class="contact-form">
+              <h3>Contact Info</h3>
+
+              <address>
+                <strong>TechHub Inc.</strong><br>
+                1234 Dev Lane, Suite 101<br>
+                San Francisco, CA 94107<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-8 col-md-8">
+            <div class="contact-form">
+
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#bottom-->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          &copy; 2026 TechHub. All rights reserved.
+        </div>
+        <div class="col-sm-6">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer><!--/#footer-->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mousescroll.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom-scripts.js"></script>
+</body>
+
+</html>
