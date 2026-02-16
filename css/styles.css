@@ -1,16 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
-/*
-Author: webthemez.com
-Author URL: http://webthemez.com
-*/
-/*************************
-*******Typography******
-**************************/
 body {
-  padding-top: 100px;
+  padding-top: 90px;
   background: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   color: #282828;
   line-height: 26px;
@@ -24,7 +17,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 a {
@@ -172,83 +165,9 @@ ul.nostyle i {
   }
 }
 
-/*************************
-*******Header******
-**************************/
-#main-nav.navbar-default {
-  background: #0b1220;
-}
-
-#main-nav.navbar-default .navbar-nav>li.active>a,
-#main-nav.navbar-default .navbar-nav>li.open>a,
-#main-nav.navbar-default .navbar-nav>li:hover>a {
-  background: transparent;
-  color: #19BD9B;
-}
-
-.navbar.navbar-default {
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.navbar.navbar-default .navbar-toggle {
-  margin-top: 32px;
-}
-
-.navbar.navbar-default .navbar-brand {
-  height: auto;
-  padding: 30px 15px;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-  color: #19BD9B;
-  background: transparent;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-#main-nav.navbar-default {
-  background: #0b1220;
-}
+/* LEGACY HEADER STYLES REMOVED FOR STYLE.CSS OVERRIDE */
 
 @media only screen and (min-width: 768px) {
-  #main-nav.navbar-default {
-    background: #0b1220;
-    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  #main-nav.navbar-default .navbar-nav {
-    margin-left: 25px;
-  }
-
-  #main-nav.navbar-default .navbar-nav>li>a {
-    padding-top: 40px;
-    padding-bottom: 36px;
-
-  }
-
-  .navbar-default .navbar-nav>li>a {
-    color: #ffffff;
-  }
-
-  #main-nav.navbar-default .navbar-nav>li.active>a,
-
-  #main-nav.navbar-default .navbar-nav>li.open>a,
-  #main-nav.navbar-default .navbar-nav>li:hover>a {
-
-    color: #19BD9B;
-
-  }
-
   #main-nav.navbar-default .dropdown-menu {
     padding: 0 20px;
     min-width: 220px;
