@@ -1,0 +1,5 @@
+Windows may show a security warning "Unknown Publisher" when running GeoTools.exe.
+To run safely:
+1. Right-click the EXE → Properties → Unblock → Apply
+OR
+2. Click "More info" → "Run anyway"
