@@ -539,8 +539,7 @@ ul.nostyle i {
 }
 
 .download-now {
-  background: #19BD9B url('../images/ipad.png') no-repeat right 65px;
-  background-size: 30%;
+  background: #19BD9B;
   padding: 100px 0 0;
 }
 

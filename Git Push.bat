@@ -1,6 +1,6 @@
 @echo off
 cd /d D:\API\Website
-git add .
+git add -A
 git commit -m "updating website"
 git push --force
 pause
