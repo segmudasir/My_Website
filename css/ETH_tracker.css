@@ -1,0 +1,198 @@
+/* ETH Tracker Scoped Styles */
+
+#eth-tracker-app {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#eth-tracker-app #app-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 23px;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Ensure responsiveness */
+}
+
+#eth-tracker-app #chart-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+#eth-tracker-app #info-panel {
+    flex: 0 0 450px;
+    align-self: flex-end;
+    border: 2px solid #ccc;
+    min-width: 300px;
+    padding: 15px;
+    border-radius: 19px;
+    background-color: #94d5ca;
+    text-align: left;
+    margin-bottom: 49px;
+}
+
+#eth-tracker-app .panel1-heading {
+    color: #ba2626;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+#eth-tracker-app .detail-box {
+    background-color: #eee;
+    padding: 15px;
+    margin: 16px 27px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#eth-tracker-app .current-price {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 4px solid orange;
+    border-radius: 20px;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    background-color: #e7d75b;
+}
+
+#eth-tracker-app .stop-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 4px solid #0ee4f7;
+    border-radius: 15px;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    background-color: #fa5c47;
+}
+
+#eth-tracker-app .profit-box {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 3px 4px;
+    border: 2px solid #1cd2ee;
+    border-radius: 10px;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    background-color: #efe7ae;
+}
+
+#eth-tracker-app .controls {
+    margin: 11px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#eth-tracker-app .controls label {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#eth-tracker-app .controls input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#eth-tracker-app #chart-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    border: 3px solid green;
+    border-radius: 21px;
+    padding: 15px;
+    background: white;
+}
+
+#eth-tracker-app input[type="number"] {
+    font-size: 1.4rem;
+    padding: 8px 12px;
+    border: 2px solid #77bbf1;
+    border-radius: 7px;
+    width: 150px;
+}
+
+#eth-tracker-app .app-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#eth-tracker-app .eth-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(138, 233, 218, 0.81);
+}
+
+#eth-tracker-app .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1b3aa3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+#eth-tracker-app #trackBtn {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#eth-tracker-app #trackBtn:active {
+    transform: scale(0.95);
+}
+
+#eth-tracker-app .info-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+#eth-tracker-app .label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#eth-tracker-app .value {
+    color: rgb(238, 122, 29);
+    font-weight: bold;
+    font-size: 1.4rem;
+}

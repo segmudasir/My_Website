@@ -20,6 +20,10 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
   <link rel="shortcut icon" href="images/ico/favicon.ico">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- ETH Tracker CSS -->
+  <link href="css/ETH_tracker.css" rel="stylesheet">
 </head>
 
 <body id="home">
@@ -264,21 +268,75 @@
   <!-- ETH TRACKER SECTION -->
   <section id="eth-tracker"
     style="padding: 100px 0; background: #f9f9f9; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
-    <div class="container">
+    <div class="container-fluid" style="padding: 0 50px;">
       <div class="section-header">
         <h2 class="section-title wow fadeInDown"><span class="gradient-text">ETH Tracker</span></h2>
         <p class="wow fadeInDown">Real-time Ethereum price tracking with live updates, historical data, and market
           analytics.</p>
       </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="price-card">
-            <div class="eth-icon">◈</div>
-            <h2>$2,445.9</h2>
-            <span class="price-change positive">↗ +3.74%</span>
-            <div style="margin-top: 20px;">
-              <a href="#" class="btn btn-primary" onclick="return false;" style="cursor: default; opacity: 0.7;">Coming
-                Soon</a>
+
+      <div id="eth-tracker-app">
+        <div id="app-container">
+          <!-- Left: Chart and Controls -->
+          <div id="chart-panel">
+            <div class="app-header">
+              <div class="eth-circle">ETH</div>
+              <h1 class="title">Live Tracker</h1>
+            </div>
+
+            <div class="controls">
+              <input type="number" id="entryPrice" placeholder="Entry Price" step="0.01" />
+              <input type="number" id="size" placeholder="Size" value="0.01" step="0.0001" />
+              <input type="number" id="stopPrice" placeholder="Stop Price" step="0.01" />
+            </div>
+
+            <div class="controls">
+              <label style="color:#333; font-weight:bold;"><input type="radio" name="position" value="long" checked>
+                Long</label>
+              &nbsp;&nbsp;
+              <label style="color:#333; font-weight:bold;"><input type="radio" name="position" value="short">
+                Short</label>
+            </div>
+
+            <div class="controls">
+              <button id="trackBtn" onclick="startTracking()">Start Tracking</button>
+            </div>
+
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1000px; margin-top: 20px;">
+              <div id="latest-price" class="current-price">-- $</div>
+              <div id="profitDisplay" class="profit-box">Profit: 0.00 $</div>
+              <div id="stop-price" class="stop-price">Waiting...</div>
+            </div>
+
+            <div id="chart-container" style="height: 600px; position: relative;">
+              <canvas id="ethChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Info Panel -->
+          <div id="info-panel">
+            <h2 class="panel1-heading">Previous 24 Hours</h2>
+            <div class="detail-box">
+              <div class="info-line"><span class="label">24H Max:</span> <span class="value" id="high24h">--</span>
+              </div>
+              <div class="info-line"><span class="label">24H Min:</span> <span class="value" id="low24h">--</span></div>
+              <div class="info-line"><span class="label">Close to Max:</span> <span class="value"
+                  data-type="max">--</span></div>
+              <div class="info-line"><span class="label">Close to Min:</span> <span class="value"
+                  data-type="min">--</span></div>
+              <div class="info-line"><span class="label">24H Average:</span> <span class="value"
+                  data-type="24average">--</span></div>
+              <div class="info-line"><span class="label">1H Price:</span> <span class="value"
+                  data-type="prev1h">--</span></div>
+              <div class="info-line"><span class="label">1H Change:</span> <span class="value"
+                  data-type="average">--</span></div>
+            </div>
+            <div class="detail-box">
+              <div class="info-line"><span class="label">Leverage:</span> <span class="value" data-type="levr">x5</span>
+              </div>
+              <div class="info-line"><span class="label">Liquidation Price:</span> <span class="value"
+                  data-type="liqPrice">--</span></div>
             </div>
           </div>
         </div>
@@ -471,6 +529,7 @@
   <script src="js/jquery.inview.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/custom-scripts.js"></script>
+  <script src="js/ETH_script.js"></script>
 
   <!-- EmailJS Library -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
