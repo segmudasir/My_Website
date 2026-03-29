@@ -212,46 +212,6 @@ ul.nostyle i {
   }
 }
 
-#hero-banner {
-  overflow: hidden;
-  height: 650px;
-  color: #4C4C4C;
-  border-bottom: 1px solid #BDBDBD;
-}
-
-#hero-banner.item {
-  height: 558px;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-}
-
-#hero-banner.banner-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #282828;
-}
-
-#hero-banner {
-  background: #F7F7F7 url('../images/banner/bg1.png') no-repeat 92% bottom;
-}
-
-#hero-banner h2 {
-  margin-top: 180px;
-  font-size: 39px;
-  line-height: 49px;
-}
-
-#hero-banner.banner-inner h2>span {
-  color: #45aed6;
-}
-
-#hero-banner.banner-inner .btn {
-  margin-top: 10px;
-}
 
 #hero-text {
   padding: 50px 0;
@@ -922,20 +882,6 @@ ul.nostyle i {
 }
 
 @media only screen and (max-width: 480px) {
-  #hero-banner h2 {
-    margin-top: 280px;
-    font-size: 26px;
-    line-height: 40px;
-    background: rgba(255, 255, 255, 0.68);
-    padding: 10px;
-  }
-
-  #hero-banner p {
-    font-size: 18px;
-    background: rgba(255, 255, 255, 0.68);
-    padding: 10px;
-  }
-
   #portfolio .portfolio-filter {
     list-style: none;
     padding: 0;

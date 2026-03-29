@@ -1,21 +1,19 @@
-/* ETH Tracker Scoped Styles */
+/* ETH Tracker Modernized Styles */
 
 #eth-tracker-app {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    padding: 20px;
-    color: #333;
-    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: transparent;
+    padding: 20px 0;
+    color: var(--slate-900);
 }
 
 #eth-tracker-app #app-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 23px;
-    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0;
     flex-wrap: wrap;
-    /* Ensure responsiveness */
 }
 
 #eth-tracker-app #chart-panel {
@@ -27,172 +25,172 @@
 }
 
 #eth-tracker-app #info-panel {
-    flex: 0 0 450px;
-    align-self: flex-end;
-    border: 2px solid #ccc;
-    min-width: 300px;
-    padding: 15px;
-    border-radius: 19px;
-    background-color: #94d5ca;
+    flex: 0 0 400px;
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
     text-align: left;
-    margin-bottom: 49px;
 }
 
 #eth-tracker-app .panel1-heading {
-    color: #ba2626;
+    color: var(--slate-900);
     font-size: 1.5rem;
-    margin-top: 10px;
-    margin-left: 35px;
-    font-weight: bold;
+    margin-bottom: 24px;
+    font-weight: 800;
 }
 
 #eth-tracker-app .detail-box {
-    background-color: #eee;
-    padding: 15px;
-    margin: 16px 27px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 1.3rem;
+    background-color: var(--slate-50);
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 20px;
 }
 
 #eth-tracker-app .current-price {
-    font-size: 3.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: 4px solid orange;
-    border-radius: 20px;
-    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 12px 24px;
+    background: var(--slate-900);
+    color: var(--white);
+    border-radius: 16px;
     display: inline-block;
-    margin: 10px;
-    background-color: #e7d75b;
+    box-shadow: var(--shadow-lg);
 }
 
 #eth-tracker-app .stop-price {
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding: 8px 15px;
-    border: 4px solid #0ee4f7;
-    border-radius: 15px;
-    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid #ef4444;
+    border-radius: 12px;
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.05);
     display: inline-block;
-    margin: 10px;
-    background-color: #fa5c47;
 }
 
 #eth-tracker-app .profit-box {
-    font-size: 1.7rem;
-    font-weight: bold;
-    padding: 3px 4px;
-    border: 2px solid #1cd2ee;
-    border-radius: 10px;
-    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    color: var(--primary);
+    background: rgba(16, 185, 129, 0.05);
     display: inline-block;
-    margin: 10px;
-    background-color: #efe7ae;
 }
 
 #eth-tracker-app .controls {
-    margin: 11px 0;
+    margin: 20px 0;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#eth-tracker-app .controls label {
-    font-size: 1.4rem;
-    color: #333;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
+#eth-tracker-app .controls input[type="number"] {
+    font-size: 1rem;
+    padding: 12px 16px;
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+    width: 160px;
+    background: var(--white);
+    transition: all 0.2s;
 }
 
-#eth-tracker-app .controls input[type="radio"] {
-    width: 20px;
-    height: 20px;
+#eth-tracker-app .controls input[type="number"]:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+}
+
+#eth-tracker-app #trackBtn {
+    font-size: 1rem;
+    padding: 14px 40px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
     cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.39);
+    transition: all 0.2s;
+}
+
+#eth-tracker-app #trackBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.23);
 }
 
 #eth-tracker-app #chart-container {
     width: 100%;
-    max-width: 1200px;
-    height: 600px;
-    margin: 20px auto 0 auto;
-    border: 3px solid green;
-    border-radius: 21px;
-    padding: 15px;
-    background: white;
-}
-
-#eth-tracker-app input[type="number"] {
-    font-size: 1.4rem;
-    padding: 8px 12px;
-    border: 2px solid #77bbf1;
-    border-radius: 7px;
-    width: 150px;
+    max-width: 1000px;
+    height: 500px;
+    margin-top: 40px;
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: var(--shadow-md);
 }
 
 #eth-tracker-app .app-header {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 #eth-tracker-app .eth-circle {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background-color: #ff9900;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
+    background: linear-gradient(135deg, #627eea, #3c3c3d);
+    color: var(--white);
+    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(138, 233, 218, 0.81);
+    box-shadow: var(--shadow-md);
 }
 
 #eth-tracker-app .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1b3aa3;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--slate-900);
     margin: 0;
-}
-
-#eth-tracker-app #trackBtn {
-    font-size: 1.1rem;
-    padding: 10px 25px;
-    background-color: darkorange;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: transform 0.1s;
-}
-
-#eth-tracker-app #trackBtn:active {
-    transform: scale(0.95);
 }
 
 #eth-tracker-app .info-line {
     display: flex;
     justify-content: space-between;
-    padding: 4px 0;
-    border-bottom: 1px dashed #ccc;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--slate-100);
+}
+
+#eth-tracker-app .info-line:last-child {
+    border-bottom: none;
 }
 
 #eth-tracker-app .label {
-    font-weight: bold;
-    color: #333;
-    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--slate-500);
+    font-size: 0.95rem;
 }
 
 #eth-tracker-app .value {
-    color: rgb(238, 122, 29);
-    font-weight: bold;
-    font-size: 1.4rem;
+    color: var(--slate-900);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#eth-tracker-app .value[data-type="max"], 
+#eth-tracker-app #latest-price.up {
+    color: var(--primary);
+}
+
+#eth-tracker-app .value[data-type="min"], 
+#eth-tracker-app #latest-price.down {
+    color: #ef4444;
 }

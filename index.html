@@ -51,7 +51,6 @@
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#api-tester">API Tester</a></li>
             <li class="scroll"><a href="#ecommerce">E-Commerce</a></li>
-            <li class="scroll"><a href="#school-system">School System</a></li>
             <li class="scroll"><a href="#geo">Geo Tools</a></li>
             <li class="scroll"><a href="#eth-tracker">ETH Tracker</a></li>
             <li class="scroll"><a href="#request-license">Request License</a></li>
@@ -62,60 +61,91 @@
     </nav><!--/nav-->
   </header><!--/header-->
 
-  <!-- HERO BANNER -->
-  <section id="hero-banner">
-    <div class="banner-inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <span class="badge">All-in-One Developer Platform</span>
-            <h2 style="font-size: 48px; font-weight: 700;">Build, Test & Deploy <br> <span
-                class="gradient-text">Everything You Need</span></h2>
-            <p>A comprehensive suite of developer tools including API testing, e-commerce solutions, school management,
-              geo tools, and real-time crypto tracking.</p>
-            <a class="btn btn-primary btn-lg" href="#api-tester">Explore Tools →</a>
-            <a class="btn outline btn-lg" href="#" style="margin-left: 10px;">Documentation</a>
+  <!-- CLEAN IMAGE SHOWCASE (TOP) -->
+  <section id="hero-showcase" class="wow fadeIn" style="margin-top: 100px; position: relative; overflow: hidden;">
+    <div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <!-- Indicators -->
+      <ol class="carousel-indicators" style="bottom: 30px;">
+        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+        <li data-target="#main-carousel" data-slide-to="2"></li>
+        <li data-target="#main-carousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-image-container">
+            <img src="downloads/section.png" alt="Cross Section Showcase 1">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-image-container">
+            <img src="downloads/Section2.png" alt="Cross Section Showcase 2">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-image-container">
+            <img src="downloads/Section3.png" alt="Cross Section Showcase 3">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-image-container">
+            <img src="downloads/Section4.png" alt="Cross Section Showcase 4">
           </div>
         </div>
       </div>
-    </div>
-  </section><!--/#main-slider-->
 
-  <!-- GEO TOOLS SECTION (DOWNLOAD STYLE) -->
-  <section id="geo" class="download-now"
-    style="margin-left: -100px; padding-left: -150px; margin-top: 100px; padding-top: 100px; margin-bottom: 100px; padding-bottom: 100px; background: #19BD9B; color: #fff;">
+      <!-- Controls -->
+      <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev" style="background: none;">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next" style="background: none;">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- GEO TOOLS SECTION -->
+  <section id="geo" style="padding: 100px 0; background: var(--slate-50); position: relative; overflow: hidden;">
     <div class="container">
-      <div class="row">
+      <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
         <div class="col-sm-6">
-          <div class="section-header" style="text-align: left; margin-left: -100px; padding: 0;">
-            <h2 class="section-title wow fadeInDown" style="color: #f01b4c; text-align: left; margin-top: 0;"><span
-                style="color: #f01b4c;">Geo Tools Suite</span>
+          <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+            <h2 class="section-title wow fadeInDown" style="text-align: left; border: none; padding: 0; margin-bottom: 20px;">
+              <span class="gradient-text">Geo Tools Suite</span>
             </h2>
-            <p class="wow fadeInDown" style="color: rgba(255,255,255,0.9); margin-bottom: 25px;">In the Geo Tools
-              application, you can do basic
-              calculations, e.g. Time to depth conversion using Time Depth charts and vice versa, Calculate Timeshifts
-              from
-              well logs, Create 2D base map, Create 3D base map (calculation of 4th point by providing three points
-              coordinates or values), Filter the wells inside Polygon, Digitizer (Digitize curves from raster data),
-              Resolve
-              RMS, Interval and Average Velocities, Different Source Rock Properties, Petrophysics (calculate Porosity,
-              Total Porosity and Effective Porosity, NPHI Vs RHOB Crossplot for lithology indentification, Calulate
-              Water
-              Saturation and Hydrocarbon Saturation, Rescale well logs, Facies modelling and calculate Sedimentary
-              Decompaction.</p>
-            <p class="wow fadeInDown" style="color: rgba(255,255,255,0.9);"><strong>Note:</strong> Facies modelling and
-              Sedimentary Decompactions are only available in full version.
-              For that you need to register your software free of cost. Currently we are working on Cross section. Very
-              soon that will be available freely.</p>
-            <a class="download-btn" href="downloads/GeoTools_Bundle.zip" style="margin-top: 30px;">Download</a>
+            <p class="wow fadeInDown" style="color: var(--slate-600); font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+              A comprehensive toolkit for geological and petrophysical analysis. Perform complex calculations 
+              including Time-to-Depth conversion, 2D/3D base mapping, well filtering, and digitizing curve 
+              data from raster sources. 
+            </p>
+            <div class="features-list wow fadeInDown" style="margin-bottom: 40px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--slate-700);">
+                <i class="fa fa-check-circle" style="color: var(--primary);"></i> Petrophysics & Lithology ID
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--slate-700);">
+                <i class="fa fa-check-circle" style="color: var(--primary);"></i> 3D Base Mapping
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--slate-700);">
+                <i class="fa fa-check-circle" style="color: var(--primary);"></i> Facies Modeling
+              </div>
+            </div>
+            <a class="btn primary" href="downloads/GeoTools_Bundle.zip" style="display: inline-block;">Download Suite</a>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="wow fadeInRight" style="padding-top: 20px;">
-            <img src="downloads/section.png" alt="Geo Tools Preview" class="img-responsive"
-              style="border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
-            <img src="downloads/facies.png" alt="Facies Modeling Preview" class="img-responsive"
-              style="margin-top: 25px; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+          <div class="wow fadeInRight" style="position: relative; z-index: 1;">
+            <div class="glass-card" style="padding: 10px; border-radius: 24px; transform: rotate(2deg);">
+              <img src="downloads/facies.png" alt="Facies Modeling Preview" class="img-responsive"
+                style="border-radius: 20px; width: 100%;">
+            </div>
+            <!-- Decorative element -->
+            <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--primary); opacity: 0.1; border-radius: 50%; z-index: -1;"></div>
           </div>
         </div>
       </div>
@@ -148,7 +178,7 @@
               <input type="text" class="url-input"
                 placeholder="https://customers-ecom-api.onrender.com/customers?CustomerID=91"
                 value="https://customers-ecom-api.onrender.com/customers?CustomerID=91" />
-              <button class="btn btn-primary send-btn">
+            <button class="btn primary send-btn">
                 <span>Send</span>
               </button>
             </div>
@@ -156,13 +186,13 @@
             <!-- Response Section -->
             <div class="response-section">
               <h3>Response</h3>
-              <div class="response-box">
-                <p class="response-placeholder">Send a request to see the response</p>
+              <div class="response-box" style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 16px;">
+                <p class="response-placeholder" style="color: var(--slate-400);">Send a request to see the response</p>
               </div>
             </div>
           </div>
           <div class="text-center" style="margin-top: 30px;">
-            <a href="api-tester.html" class="btn btn-primary">Open Full API Tester</a>
+            <a href="api-tester.html" class="btn primary">Open Full API Tester</a>
           </div>
         </div>
       </div>
@@ -344,63 +374,55 @@
     </div>
   </section>
 
-  <section id="request-license"
-    style="margin-left: -100px; padding-left: -150px; margin-top: 100px; padding-top: 100px; margin-bottom: 100px; padding-bottom: 100px; background: #19BD9B; color: #fff;">
+  <section id="request-license" style="padding: 100px 0; background: var(--slate-900); color: var(--white);">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="section-header" style="text-align: left; margin-left: -100px; padding: 0;">
-            <h2 class="section-title wow fadeInDown" style="color: #f01b4c; text-align: left; margin-top: 0;">Request
-              License</h2>
-            <p class="wow fadeInDown" style="color: rgba(255, 255, 255, 0.97); font-size: 16px; line-height: 37px">
-              Please Enter your Name, Email Address, Select the Product for which license is Requiered and for how many
-              days.
-              This will generate your license key instantly.</p>
+      <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+        <div class="col-md-5">
+          <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+            <h2 class="section-title wow fadeInDown" style="color: var(--white); border-color: var(--primary); text-align: left; margin-top: 0;">
+              Request <span style="color: var(--primary);">License</span>
+            </h2>
+            <p class="wow fadeInDown" style="color: var(--slate-400); font-size: 16px; line-height: 1.6;">
+              Get your instant license key by providing your details below. Choose your product and duration to start using our premium tools today.
+            </p>
             <div style="margin-top: 30px;" class="wow fadeInDown">
-              <address style="color: #fff; font-size: 16px; line-height: 37px;">
-                <strong class="license-title">Standard License includes:</strong><br>
-                Full feature access<br>
-                Priority developer support<br>
-                Regular security updates
+              <address style="color: var(--slate-300); font-size: 15px; line-height: 2;">
+                <strong style="color: var(--white); display: block; margin-bottom: 10px;">Standard License includes:</strong>
+                <i class="fa fa-check" style="color: var(--primary); margin-right: 8px;"></i> Full feature access<br>
+                <i class="fa fa-check" style="color: var(--primary); margin-right: 8px;"></i> Priority developer support<br>
+                <i class="fa fa-check" style="color: var(--primary); margin-right: 8px;"></i> Regular security updates
               </address>
             </div>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="contact-form"
-            style="background: #ffffff; margin-left: 150px; margin-right: -50px; padding: 35px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); color: #333;">
+        <div class="col-md-7">
+          <div class="glass-card" style="padding: 40px; border-radius: 24px;">
             <form id="license-request-form" name="license-form">
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="form-group" style="margin-bottom: 20px;">
-                    <label
-                      style="color: #666; font-size: 15px; font-weight: 600; margin-bottom: 8px; display: block;">Full
-                      Name</label>
+                  <div class="form-group" style="margin-bottom: 24px;">
+                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Full Name</label>
                     <input type="text" id="license-name" name="name" class="form-control" placeholder="John Doe"
-                      style="background: #f8fafc; border: 2px solid #aecffa; height: 50px; border-radius: 10px; color: #1e293b;"
+                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
                       required>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="form-group" style="margin-bottom: 20px;">
-                    <label
-                      style="color: #666; font-size: 15px; font-weight: 600; margin-bottom: 8px; display: block;">Email
-                      Address</label>
+                  <div class="form-group" style="margin-bottom: 24px;">
+                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Email Address</label>
                     <input type="email" id="license-email" name="email" class="form-control"
                       placeholder="john@example.com"
-                      style="background: #f8fafc; border: 2px solid #aecffa; height: 50px; border-radius: 10px; color: #1e293b;"
+                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
                       required>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="form-group" style="margin-bottom: 20px;">
-                    <label
-                      style="color: #666; font-size: 15px; font-weight: 600; margin-bottom: 8px; display: block;">Select
-                      Product</label>
+                  <div class="form-group" style="margin-bottom: 24px;">
+                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Select Product</label>
                     <select id="license-product" name="product" class="form-control"
-                      style="background: #f8fafc; border: 2px solid #aecffa; height: 50px; border-radius: 10px; color: #1e293b;"
+                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
                       required>
                       <option value="Geo Tools" selected>Geo Tools</option>
                       <option value="ETH Tracker">ETH Tracker</option>
@@ -408,37 +430,32 @@
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="form-group" style="margin-bottom: 20px;">
-                    <label
-                      style="color: #666; font-size: 15px; font-weight: 600; margin-bottom: 8px; display: block;">License
-                      Duration (Days)</label>
+                  <div class="form-group" style="margin-bottom: 24px;">
+                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Duration (Days)</label>
                     <input type="number" id="license-days" name="days" class="form-control" placeholder="30" value="30"
-                      style="background: #f8fafc; border: 2px solid #aecffa; height: 50px; border-radius: 10px; color: #1e293b;"
+                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
                       required>
                   </div>
                 </div>
               </div>
               <div style="margin-top: 10px;">
-                <button type="submit" class="btn btn-primary"
-                  style="background: #5fa4e8; color: #fff; border: none; font-weight: 700; padding: 15px 40px; border-radius: 12px; width: 100%; font-size: 16px; transition: transform 0.2s;">Generate
-                  License Key</button>
+                <button type="submit" class="btn primary" style="width: 100%; height: 55px; font-size: 16px;">Generate License Key</button>
               </div>
             </form>
 
             <div id="license-result"
-              style="display: none; margin-top: 35px; padding: 25px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 15px; border-left: 5px solid #FF8C00;">
-              <h4 style="color: #1e293b; margin-top: 0; font-weight: 700; font-size: 18px;">Your Generated License</h4>
+              style="display: none; margin-top: 35px; padding: 25px; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 16px; border-left: 5px solid var(--primary);">
+              <h4 style="color: var(--white); margin-top: 0; font-weight: 700; font-size: 18px;">Your Generated License</h4>
               <div
-                style="margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.8; color: #475569;">
+                style="margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.8; color: var(--slate-300);">
                 <div
-                  style="background: #fff; padding: 15px; border-radius: 8px; border: 1px dashed #cbd5e1; margin-bottom: 15px;">
-
+                  style="background: var(--slate-800); padding: 15px; border-radius: 8px; border: 1px dashed var(--slate-600); margin-bottom: 15px;">
                   <span id="res-key"
-                    style="color: #FF4500; font-size: 20px; font-weight: 800; font-family: 'Monaco', 'Consolas', monospace; word-break: break-all;"
+                    style="color: var(--primary); font-size: 20px; font-weight: 800; font-family: 'Monaco', 'Consolas', monospace; word-break: break-all;"
                     onclick="navigator.clipboard.writeText(this.innerText); alert('Copied to clipboard!')"></span>
                 </div>
-                <strong>Product:</strong> <span id="res-product" style="color: #1e293b; font-weight: 600;"></span><br>
-                <strong>Expiry Date:</strong> <span id="res-expiry" style="color: #1e293b; font-weight: 600;"></span>
+                <strong>Product:</strong> <span id="res-product" style="color: var(--white); font-weight: 600;"></span><br>
+                <strong>Expiry Date:</strong> <span id="res-expiry" style="color: var(--white); font-weight: 600;"></span>
               </div>
             </div>
           </div>
@@ -447,73 +464,71 @@
     </div>
   </section>
 
-  <section id="contact-us" style="padding-top: 0px; padding-left: 50px;">
-    <div class="container" style="margin-left: 150px; margin-top: 20px;">
-      <div class="section-header">
-        <h2 class="section-title wow fadeInDown">Contact Us</h2>
-        <p class="wow fadeInDown">Have questions or need support? Reach out to our team.</p>
+  <section id="contact" style="padding: 100px 0; background: var(--white);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+        <h2 class="section-title wow fadeInDown">Contact <span class="gradient-text">Us</span></h2>
+        <p class="wow fadeInDown" style="color: var(--slate-500);">Have questions or need support? Reach out to our team.</p>
       </div>
-    </div>
-  </section><!--/#contact-us-->
 
-
-  <section id="contact">
-
-    <div class="container" style="margin-left: 300px; margin-top: -75px;">
-      <div class="container contact-info" style="margin-left: 100px; margin-top: 0;">
-        <div class="row">
-          <div class="col-sm-4 col-md-4">
-            <div class="contact-form">
-              <h3>Contact Info:</h3><br>
-
-              <address>
-                <strong>TechHub Inc.</strong><br>
-                Muhammad Mudasir<br>
-                Belwederska 26/30 32-127<br>
-                Warsaw, Poland<br>
-                <abbr title="Phone">Phone:</abbr> (123) 456-7890
-              </address>
-            </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-info wow fadeInLeft" style="padding-right: 40px;">
+            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 24px; color: var(--slate-900);">Get in Touch</h3>
+            <address style="color: var(--slate-600); font-size: 16px; line-height: 2;">
+              <strong style="color: var(--slate-900);">TechHub Inc.</strong><br>
+              <i class="fa fa-user" style="color: var(--primary); width: 20px;"></i> Muhammad Mudasir<br>
+              <i class="fa fa-map-marker" style="color: var(--primary); width: 20px;"></i> Belwederska 26/30 32-127<br>
+              <span style="margin-left: 20px;">Warsaw, Poland</span><br>
+              <i class="fa fa-phone" style="color: var(--primary); width: 20px;"></i> (123) 456-7890
+            </address>
           </div>
-          <div class="col-sm-8 col-md-8">
-            <div class="contact-form">
-
-              <form id="main-contact-form" name="contact-form" method="post" action="#">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="col-md-8">
+          <div class="contact-form wow fadeInRight">
+            <form id="main-contact-form" name="contact-form" method="post" action="#">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group" style="margin-bottom: 20px;">
+                    <input type="text" name="name" class="form-control" placeholder="Name" 
+                      style="height: 50px; border-radius: 12px; border: 1px solid var(--slate-200); background: var(--slate-50);" required>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="email" name="email" class="form-control" placeholder="Email" required>
+                <div class="col-sm-6">
+                  <div class="form-group" style="margin-bottom: 20px;">
+                    <input type="email" name="email" class="form-control" placeholder="Email" 
+                      style="height: 50px; border-radius: 12px; border: 1px solid var(--slate-200); background: var(--slate-50);" required>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                  <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
-            </div>
+              </div>
+              <div class="form-group" style="margin-bottom: 20px;">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" 
+                  style="height: 50px; border-radius: 12px; border: 1px solid var(--slate-200); background: var(--slate-50);" required>
+              </div>
+              <div class="form-group" style="margin-bottom: 24px;">
+                <textarea name="message" class="form-control" rows="6" placeholder="Message" 
+                  style="border-radius: 12px; border: 1px solid var(--slate-200); background: var(--slate-50); padding: 15px;" required></textarea>
+              </div>
+              <button type="submit" class="btn primary" style="padding: 14px 40px;">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section><!--/#bottom-->
+  </section>
 
-  <footer id="footer">
+  <footer id="footer" style="padding: 60px 0; background: var(--slate-900); color: var(--white);">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          &copy; 2026 TechHub. All rights reserved.
+        <div class="col-sm-6 text-left">
+          <p style="margin: 0; color: var(--slate-400);">&copy; 2026 TechHub. All rights reserved.</p>
         </div>
-        <div class="col-sm-6">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <div class="col-sm-6 text-right">
+          <ul class="social-icons" style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: flex-end; gap: 15px;">
+            <li><a href="#" style="color: var(--white); font-size: 18px; transition: color 0.3s;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" style="color: var(--white); font-size: 18px; transition: color 0.3s;"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" style="color: var(--white); font-size: 18px; transition: color 0.3s;"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" style="color: var(--white); font-size: 18px; transition: color 0.3s;"><i class="fa fa-github"></i></a></li>
           </ul>
         </div>
       </div>
