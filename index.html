@@ -22,6 +22,8 @@
   <link rel="shortcut icon" href="images/ico/favicon.ico">
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body id="home">
@@ -107,7 +109,7 @@
 
 
   <!-- GEO TOOLS SECTION -->
-  <section id="geo" style="padding: 100px 0; background: var(--slate-50); position: relative; overflow: hidden;">
+  <section id="geo" style="padding: 100px 0; background-color: var(--slate-100); position: relative; overflow: hidden;">
     <div class="container">
       <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
         <div class="col-sm-6">
@@ -149,7 +151,7 @@
   </section>
 
   <!-- API TESTER SECTION -->
-  <section id="api-tester" style="padding: 100px 0;">
+  <section id="api-tester" style="padding: 100px 0; background-color: var(--white);">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title wow fadeInDown"><span class="gradient-text">API Tester</span></h2>
@@ -197,20 +199,20 @@
 
 
 
-  <section id="request-license" style="padding: 100px 0; background: var(--slate-900); color: var(--white);">
+  <section id="request-license" style="padding: 100px 0; background: var(--slate-100); color: var(--slate-900);">
     <div class="container">
       <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
         <div class="col-md-5">
           <div class="section-header" style="text-align: left; margin-bottom: 40px;">
-            <h2 class="section-title wow fadeInDown" style="color: var(--white); border-color: var(--primary); text-align: left; margin-top: 0;">
-              Request <span style="color: var(--primary);">License</span>
+            <h2 class="section-title wow fadeInDown" style="color: var(--slate-900); border-color: var(--primary); text-align: left; margin-top: 0;">
+              Get Your <span style="color: var(--primary);">License</span>
             </h2>
-            <p class="wow fadeInDown" style="color: var(--slate-400); font-size: 16px; line-height: 1.6;">
-              Get your instant license key by providing your details below. Choose your product and duration to start using our premium tools today.
+            <p class="wow fadeInDown" style="color: var(--slate-600); font-size: 16px; line-height: 1.6;">
+              Get instant access to our premium suite. Licenses are automatically generated and emailed to you immediately after purchase.
             </p>
             <div style="margin-top: 30px;" class="wow fadeInDown">
-              <address style="color: var(--slate-300); font-size: 15px; line-height: 2;">
-                <strong style="color: var(--white); display: block; margin-bottom: 10px;">Standard License includes:</strong>
+              <address style="color: var(--slate-600); font-size: 15px; line-height: 2;">
+                <strong style="color: var(--slate-900); display: block; margin-bottom: 10px;">Standard License includes:</strong>
                 <i class="fa fa-check" style="color: var(--primary); margin-right: 8px;"></i> Full feature access<br>
                 <i class="fa fa-check" style="color: var(--primary); margin-right: 8px;"></i> Priority developer support<br>
                 <i class="fa fa-check" style="color: var(--primary); margin-right: 8px;"></i> Regular security updates
@@ -219,23 +221,23 @@
           </div>
         </div>
         <div class="col-md-7">
-          <div class="glass-card" style="padding: 40px; border-radius: 24px;">
+          <div class="glass-card" style="padding: 40px; border-radius: 24px; background: var(--white); border: 1px solid var(--slate-200); box-shadow: var(--shadow-xl);">
             <form id="license-request-form" name="license-form">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group" style="margin-bottom: 24px;">
-                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Full Name</label>
+                    <label style="color: var(--slate-700); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Full Name</label>
                     <input type="text" id="license-name" name="name" class="form-control" placeholder="John Doe"
-                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
+                      style="background: var(--slate-50); border: 1px solid var(--slate-200); height: 50px; border-radius: 12px; color: var(--slate-900);"
                       required>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group" style="margin-bottom: 24px;">
-                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Email Address</label>
+                    <label style="color: var(--slate-700); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Email Address</label>
                     <input type="email" id="license-email" name="email" class="form-control"
                       placeholder="john@example.com"
-                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
+                      style="background: var(--slate-50); border: 1px solid var(--slate-200); height: 50px; border-radius: 12px; color: var(--slate-900);"
                       required>
                   </div>
                 </div>
@@ -243,9 +245,9 @@
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group" style="margin-bottom: 24px;">
-                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Select Product</label>
+                    <label style="color: var(--slate-700); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Select Product</label>
                     <select id="license-product" name="product" class="form-control"
-                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
+                      style="background: var(--slate-50); border: 1px solid var(--slate-200); height: 50px; border-radius: 12px; color: var(--slate-900);"
                       required>
                       <option value="Geo Tools" selected>Geo Tools</option>
                     </select>
@@ -253,31 +255,38 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group" style="margin-bottom: 24px;">
-                    <label style="color: var(--slate-300); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Duration (Days)</label>
+                    <label style="color: var(--slate-700); font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block;">Duration (Days)</label>
                     <input type="number" id="license-days" name="days" class="form-control" placeholder="30" value="30"
-                      style="background: var(--slate-800); border: 1px solid var(--slate-700); height: 50px; border-radius: 12px; color: var(--white);"
+                      style="background: var(--slate-50); border: 1px solid var(--slate-200); height: 50px; border-radius: 12px; color: var(--slate-900);"
                       required>
                   </div>
                 </div>
               </div>
               <div style="margin-top: 10px;">
-                <button type="submit" class="btn primary" style="width: 100%; height: 55px; font-size: 16px;">Generate License Key</button>
+                <button type="submit" id="checkout-button" class="btn primary" style="width: 100%; height: 55px; font-size: 16px; position: relative;">
+                  <span class="btn-text">Proceed to Payment</span>
+                  <span class="btn-loader" style="display: none;"><i class="fa fa-spinner fa-spin"></i> Processing...</span>
+                </button>
               </div>
             </form>
+            
+            <div id="payment-info" style="margin-top: 20px; text-align: center; color: var(--slate-500); font-size: 13px;">
+              <i class="fa fa-lock"></i> Secured by Stripe
+            </div>
 
             <div id="license-result"
               style="display: none; margin-top: 35px; padding: 25px; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 16px; border-left: 5px solid var(--primary);">
-              <h4 style="color: var(--white); margin-top: 0; font-weight: 700; font-size: 18px;">Your Generated License</h4>
+              <h4 style="color: var(--slate-900); margin-top: 0; font-weight: 700; font-size: 18px;">Your Generated License</h4>
               <div
-                style="margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.8; color: var(--slate-300);">
+                style="margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.8; color: var(--slate-600);">
                 <div
-                  style="background: var(--slate-800); padding: 15px; border-radius: 8px; border: 1px dashed var(--slate-600); margin-bottom: 15px;">
+                  style="background: var(--slate-50); padding: 15px; border-radius: 8px; border: 1px dashed var(--slate-300); margin-bottom: 15px;">
                   <span id="res-key"
                     style="color: var(--primary); font-size: 20px; font-weight: 800; font-family: 'Monaco', 'Consolas', monospace; word-break: break-all;"
                     onclick="navigator.clipboard.writeText(this.innerText); alert('Copied to clipboard!')"></span>
                 </div>
-                <strong>Product:</strong> <span id="res-product" style="color: var(--white); font-weight: 600;"></span><br>
-                <strong>Expiry Date:</strong> <span id="res-expiry" style="color: var(--white); font-weight: 600;"></span>
+                <strong>Product:</strong> <span id="res-product" style="color: var(--slate-900); font-weight: 600;"></span><br>
+                <strong>Expiry Date:</strong> <span id="res-expiry" style="color: var(--slate-900); font-weight: 600;"></span>
               </div>
             </div>
           </div>
@@ -369,40 +378,68 @@
 
   <!-- EmailJS Library -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- Stripe Library -->
+  <script src="https://js.stripe.com/v3/"></script>
   <script>
     // Initialize EmailJS with your public key
     emailjs.init('d6CtRQJsoVO7ek-9f');
   </script>
   <script>
+    // Constants
+    const API_BASE_URL = 'https://license-server-949582845994.europe-west1.run.app';
+
     document.getElementById('license-request-form').addEventListener('submit', async function (e) {
       e.preventDefault();
+      
+      const btn = document.getElementById('checkout-button');
+      const btnText = btn.querySelector('.btn-text');
+      const btnLoader = btn.querySelector('.btn-loader');
+      
       const name = document.getElementById('license-name').value;
       const email = document.getElementById('license-email').value;
       const product = document.getElementById('license-product').value;
       const days = document.getElementById('license-days').value;
 
-      const resultDiv = document.getElementById('license-result');
+      // Show loading state
+      btn.disabled = true;
+      btnText.style.display = 'none';
+      btnLoader.style.display = 'inline-block';
 
       try {
-        const response = await fetch('https://license-server-949582845994.europe-west1.run.app/generate', {
+        const response = await fetch(`${API_BASE_URL}/create-checkout-session`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name, email, product, days })
         });
 
-        const data = await response.json();
+        const session = await response.json();
 
-        if (response.ok) {
-          document.getElementById('res-key').textContent = data.License_key;
-          document.getElementById('res-product').textContent = data.Product;
-          document.getElementById('res-expiry').textContent = data.Expires_at;
-          resultDiv.style.display = 'block';
+        if (response.ok && session.url) {
+          // Redirect to Stripe Checkout
+          window.location.href = session.url;
         } else {
-          alert('Error: ' + (data.error || 'Check server status'));
+          throw new Error(session.error || 'Failed to create checkout session');
         }
       } catch (err) {
         console.error(err);
-        alert('Could not connect to the license server.');
+        showModal('error', 'Checkout Error', err.message || 'Could not connect to the payment server. Please try again later.');
+        
+        // Reset button
+        btn.disabled = false;
+        btnText.style.display = 'inline-block';
+        btnLoader.style.display = 'none';
+      }
+    });
+
+    // Handle success/cancel status from URL
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash.includes('success')) {
+        showModal('success', 'Payment Successful!', 'Your license is being generated and will be sent to your email address shortly. Thank you for choosing TechHub!');
+        // Clear hash
+        history.replaceState(null, null, ' ');
+      } else if (window.location.hash.includes('cancel')) {
+        showModal('error', 'Payment Cancelled', 'The checkout process was cancelled. No charges were made.');
+        history.replaceState(null, null, ' ');
       }
     });
   </script>
