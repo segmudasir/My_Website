@@ -264,14 +264,14 @@
               </div>
               <div style="margin-top: 10px;">
                 <button type="submit" id="checkout-button" class="btn primary" style="width: 100%; height: 55px; font-size: 16px; position: relative;">
-                  <span class="btn-text">Proceed to Payment</span>
-                  <span class="btn-loader" style="display: none;"><i class="fa fa-spinner fa-spin"></i> Processing...</span>
+                  <span class="btn-text">Request License Invoice</span>
+                  <span class="btn-loader" style="display: none;"><i class="fa fa-spinner fa-spin"></i> Sending Request...</span>
                 </button>
               </div>
             </form>
             
             <div id="payment-info" style="margin-top: 20px; text-align: center; color: var(--slate-500); font-size: 13px;">
-              <i class="fa fa-lock"></i> Secured by Stripe
+              <i class="fa fa-envelope"></i> An invoice will be securely emailed to you
             </div>
 
             <div id="license-result"
@@ -385,9 +385,6 @@
     emailjs.init('d6CtRQJsoVO7ek-9f');
   </script>
   <script>
-    // Constants
-    const API_BASE_URL = 'https://license-server-949582845994.europe-west1.run.app';
-
     document.getElementById('license-request-form').addEventListener('submit', async function (e) {
       e.preventDefault();
       
@@ -406,40 +403,28 @@
       btnLoader.style.display = 'inline-block';
 
       try {
-        const response = await fetch(`${API_BASE_URL}/create-checkout-session`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, product, days })
-        });
+        const templateParams = {
+          name: name,
+          email: email,
+          subject: `License Request: ${product}`,
+          message: `Request Detail:\nProduct: ${product}\nDuration: ${days} Days\n\nPlease invoice me for this license at ${email}.`
+        };
 
-        const session = await response.json();
+        // Send email using EmailJS, reusing the contact form template
+        await emailjs.send('service_4catjvr', 'template_nl20wjj', templateParams);
 
-        if (response.ok && session.url) {
-          // Redirect to Stripe Checkout
-          window.location.href = session.url;
-        } else {
-          throw new Error(session.error || 'Failed to create checkout session');
-        }
-      } catch (err) {
-        console.error(err);
-        showModal('error', 'Checkout Error', err.message || 'Could not connect to the payment server. Please try again later.');
+        // Success state
+        showModal('success', 'Request Sent Successfully!', 'We have received your license request. We will email you the invoice and license details shortly.');
+        document.getElementById('license-request-form').reset();
         
+      } catch (err) {
+        console.error('EmailJS error:', err);
+        showModal('error', 'Request Failed', 'Sorry, there was an error sending your request. Please try again or contact us directly.');
+      } finally {
         // Reset button
         btn.disabled = false;
         btnText.style.display = 'inline-block';
         btnLoader.style.display = 'none';
-      }
-    });
-
-    // Handle success/cancel status from URL
-    window.addEventListener('DOMContentLoaded', () => {
-      if (window.location.hash.includes('success')) {
-        showModal('success', 'Payment Successful!', 'Your license is being generated and will be sent to your email address shortly. Thank you for choosing TechHub!');
-        // Clear hash
-        history.replaceState(null, null, ' ');
-      } else if (window.location.hash.includes('cancel')) {
-        showModal('error', 'Payment Cancelled', 'The checkout process was cancelled. No charges were made.');
-        history.replaceState(null, null, ' ');
       }
     });
   </script>

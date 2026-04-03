@@ -37,7 +37,7 @@ body {
 
 /* NAVBAR - PREMIUM GLASSMORPHISM */
 #main-nav.navbar-default {
-  background: rgba(15, 23, 42, 0.8) !important;
+  background: rgba(43, 47, 46, 0.8) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -340,14 +340,14 @@ body {
 /* FOOTER */
 #footer {
   background: var(--slate-900);
-  padding: 80px 0 40px;
+  padding: 40px 0 40px;
   color: var(--white);
   position: relative;
 }
 
 #footer .social-icons {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 #footer .social-icons a {
@@ -373,7 +373,7 @@ body {
 /* FOOTER ENHANCEMENTS */
 #footer {
   background: var(--slate-900);
-  padding: 60px 0;
+  padding: 20px 0;
   border-top: 1px solid var(--slate-800);
   color: var(--slate-400);
 }
@@ -484,4 +484,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
-}
+}
